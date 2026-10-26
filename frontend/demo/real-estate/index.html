@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en-NG">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#163c32">
+    <meta name="description" content="Explore illustrative property listings for sale and rent in Nigeria with Haven Estates.">
+    <title>Haven Estates | Find Your Place</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <div class="demo-notice" role="note">
+        DEMO WEBSITE — Property listings and prices are illustrative examples,
+        not verified real properties or live offers.
+    </div>
+
+    <header class="site-header">
+        <a class="brand" href="#home" aria-label="Haven Estates home">
+            <span class="brand-mark" aria-hidden="true">H</span>
+            <span>HAVEN <strong>ESTATES</strong><small>PROPERTY • TRUST • HOME</small></span>
+        </a>
+
+        <button class="menu-toggle" id="menuToggle" type="button"
+                aria-expanded="false" aria-controls="mainNav">
+            Menu
+        </button>
+
+        <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+            <a href="#properties">Properties</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+            <a class="nav-cta" href="#contact">Find a Property</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <p class="eyebrow">A BETTER WAY TO FIND YOUR PLACE</p>
+                <h1>Come home to<br><span>something better.</span></h1>
+                <p class="hero-copy">
+                    Explore homes, apartments and land in Nigeria.
+                    Start with what matters to you, then enquire for more information.
+                </p>
+                <div class="hero-actions">
+                    <a class="button button-light" href="#properties">Explore properties</a>
+                    <a class="hero-text-link" href="#contact">Talk to our team <span aria-hidden="true">↗</span></a>
+                </div>
+                <div class="hero-trust">
+                    <span aria-hidden="true">✓</span>
+                    Clear enquiries <span class="trust-divider">•</span>
+                    Property search made simple
+                </div>
+            </div>
+            <div class="hero-image" role="img"
+                 aria-label="Modern residential house surrounded by greenery"></div>
+            <div class="hero-caption">
+                <span class="caption-dot"></span>
+                FIND A PLACE THAT FEELS LIKE YOURS
+            </div>
+        </section>
+
+        <section class="search-section" aria-labelledby="searchTitle">
+            <div class="search-heading">
+                <div>
+                    <p class="eyebrow">YOUR SEARCH STARTS HERE</p>
+                    <h2 id="searchTitle">Find your next property</h2>
+                </div>
+                <p>Filter the sample listings to explore your options.</p>
+            </div>
+
+            <form id="propertySearch" class="search-panel">
+                <label>
+                    Location
+                    <select id="locationFilter" name="location">
+                        <option value="">All locations</option>
+                        <option value="Abuja">Abuja</option>
+                        <option value="Lagos">Lagos</option>
+                        <option value="Port Harcourt">Port Harcourt</option>
+                    </select>
+                </label>
+                <label>
+                    Property type
+                    <select id="typeFilter" name="type">
+                        <option value="">All property types</option>
+                        <option value="Apartment">Apartment</option>
+                        <option value="House">House</option>
+                        <option value="Land">Land</option>
+                    </select>
+                </label>
+                <label>
+                    Looking to
+                    <select id="purposeFilter" name="purpose">
+                        <option value="">Buy or rent</option>
+                        <option value="Sale">Buy</option>
+                        <option value="Rent">Rent</option>
+                    </select>
+                </label>
+                <button class="button button-dark search-button" type="submit">Search properties</button>
+            </form>
+        </section>
+
+        <section class="properties-section section-wrap" id="properties">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">EXPLORE THE COLLECTION</p>
+                    <h2>Spaces worth coming home to.</h2>
+                </div>
+                <p class="section-description">
+                    Browse our sample collection. Ask for details before making any property decision.
+                </p>
+            </div>
+
+            <div class="results-bar">
+                <p id="resultsCount" aria-live="polite">Loading sample properties…</p>
+                <button class="reset-button" id="resetFilters" type="button">Reset filters ↺</button>
+            </div>
+
+            <div class="property-grid" id="propertyGrid">
+                <p class="loading-message">Loading illustrative property listings…</p>
+            </div>
+
+            <p class="listing-disclaimer">
+                <strong>Please note:</strong> Listings, photographs and prices on this demo page
+                are illustrative. Availability, ownership, location, pricing and legal status
+                have not been verified. Do not pay a deposit based on this demo.
+            </p>
+        </section>
+
+        <section class="about-section" id="about">
+            <div class="about-image" role="img"
+                 aria-label="Bright, modern living room with natural light"></div>
+            <div class="about-content">
+                <p class="eyebrow">A MORE HUMAN PROPERTY EXPERIENCE</p>
+                <h2>Your next move should feel right.</h2>
+                <p>
+                    Finding a property can be stressful. A good experience starts with
+                    understanding your needs, asking the right questions and confirming
+                    the important details before making a commitment.
+                </p>
+                <div class="about-points">
+                    <div><span>01</span><p><strong>Tell us what you need</strong><br>Share your preferred location, budget and property type.</p></div>
+                    <div><span>02</span><p><strong>Ask the right questions</strong><br>Request property details and independent verification.</p></div>
+                    <div><span>03</span><p><strong>Make informed decisions</strong><br>Review documents and confirm every detail before paying.</p></div>
+                </div>
+                <a class="button button-dark" href="#contact">Make an enquiry</a>
+            </div>
+        </section>
+
+        <section class="contact-section" id="contact">
+            <div class="contact-intro">
+                <p class="eyebrow">LET'S FIND YOUR NEXT PLACE</p>
+                <h2>Tell us what<br>you are looking for.</h2>
+                <p>
+                    Complete the form to prepare a WhatsApp enquiry.
+                    Review the message in WhatsApp and press Send when you're ready.
+                </p>
+                <div class="contact-note">
+                    <span aria-hidden="true">↗</span>
+                    <div><strong>Prefer WhatsApp?</strong><br>Your enquiry will be prepared for you to review before sending.</div>
+                </div>
+            </div>
+
+            <form class="contact-form" id="propertyEnquiryForm">
+                <div class="form-row">
+                    <label for="customerName">Your name <span>*</span>
+                        <input id="customerName" name="name" type="text" maxlength="100"
+                               autocomplete="name" required placeholder="Enter your name">
+                    </label>
+                    <label for="customerPhone">Phone number <span>*</span>
+                        <input id="customerPhone" name="phone" type="tel" maxlength="30"
+                               autocomplete="tel" required placeholder="+234...">
+                    </label>
+                </div>
+
+                <label for="enquiryProperty">Property of interest
+                    <select id="enquiryProperty" name="property">
+                        <option value="">Not sure yet — help me choose</option>
+                    </select>
+                </label>
+
+                <label for="enquiryNeeds">What are you looking for?
+                    <textarea id="enquiryNeeds" name="needs" maxlength="1500" rows="4"
+                              placeholder="Preferred location, budget, bedrooms, sale or rent…"></textarea>
+                </label>
+
+                <button class="button button-dark form-submit" type="submit">
+                    Prepare WhatsApp enquiry <span aria-hidden="true">↗</span>
+                </button>
+                <p class="form-footnote">
+                    This demo does not automatically send messages. WhatsApp opens for you
+                    to review and send. Do not include bank details or sensitive personal information.
+                </p>
+                <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <a class="brand footer-brand" href="#home">
+            <span class="brand-mark" aria-hidden="true">H</span>
+            <span>HAVEN <strong>ESTATES</strong><small>PROPERTY • TRUST • HOME</small></span>
+        </a>
+        <p>Illustrative real-estate website demo by PupaDigital.</p>
+        <a href="#home">Back to top ↑</a>
+        <p class="footer-disclaimer">Sample content only. Not a live property agency or verified listing service.</p>
+    </footer>
+</body>
+</html>

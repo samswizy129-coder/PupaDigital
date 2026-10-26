@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#10152d">
+  <title>PupaDigital — Admin Dashboard</title>
+  <meta name="description" content="PupaDigital demo administration dashboard.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar" aria-label="Main navigation">
+      <a class="brand" href="../" aria-label="PupaDigital home">
+        <span class="brand-mark">P</span><span><strong>PupaDigital</strong><small>WEBSITE STUDIO</small></span>
+      </a>
+      <div class="workspace-label">WORKSPACE</div>
+      <nav class="side-nav">
+        <a class="nav-item active" href="#overview" data-section="overview"><span class="nav-icon">⌂</span> Overview</a>
+        <a class="nav-item" href="#projects" data-section="projects"><span class="nav-icon">▦</span> Demo projects <span class="nav-count">08</span></a>
+        <a class="nav-item" href="#requests" data-section="requests"><span class="nav-icon">✉</span> Website requests <span class="demo-pill">DEMO</span></a>
+        <a class="nav-item" href="#activity" data-section="activity"><span class="nav-icon">◷</span> Activity</a>
+      </nav>
+      <div class="sidebar-bottom">
+        <div class="help-card"><span class="help-icon">✦</span><strong>Build something great</strong><p>Explore the demos and see how a business website could look.</p><a href="../#demo">Browse demos <span>↗</span></a></div>
+        <a class="back-link" href="../">← <span>Back to public website</span></a>
+        <div class="sidebar-foot"><span class="status-dot"></span> Demo environment <span class="version">v0.1</span></div>
+      </div>
+    </aside>
+
+    <main class="main-area" id="overview">
+      <header class="topbar">
+        <button class="icon-button menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+        <div class="breadcrumbs"><span>Workspace</span><b>/</b><strong id="pageTitle">Overview</strong></div>
+        <div class="top-actions"><span class="demo-label"><i></i> DEMO MODE</span><a class="public-link" href="../">View website <span>↗</span></a><button class="avatar-small" aria-label="Profile placeholder">PD</button></div>
+      </header>
+
+      <div class="content">
+        <section class="welcome-row">
+          <div><p class="eyebrow">MONDAY OVERVIEW <span class="eyebrow-dot"></span> DEMO WORKSPACE</p><h1>Good to see you, <span>Developer.</span> <span class="wave">✦</span></h1><p class="subtitle">Your creative workspace for building better business websites.</p></div>
+          <a class="primary-button" href="../#demo"><span>＋</span> Explore demo projects</a>
+        </section>
+
+        <section class="hero-banner">
+          <div class="hero-copy"><div class="hero-tag"><span>✦</span> YOUR DIGITAL WORKSPACE</div><h2>Turn great ideas into<br><em>beautiful experiences.</em></h2><p>Preview website concepts, review project types, and use this dashboard as a starting point for your workflow.</p><div class="hero-actions"><a class="hero-button" href="#projects">Explore projects <span>→</span></a><a class="hero-text-link" href="../">Visit PupaDigital ↗</a></div></div>
+          <div class="hero-art" role="img" aria-label="Illustration of a developer workspace with a laptop and code">
+            <div class="orb orb-one"></div><div class="orb orb-two"></div>
+            <div class="code-card"><div class="code-top"><i></i><i></i><i></i><span>website.js</span></div><div class="code-lines"><b>const</b> website = {<br><span> &nbsp; design: <em>'beautiful'</em>,</span><br><span> &nbsp; responsive: <strong>true</strong>,</span><br><span> &nbsp; ideas: <strong>∞</strong></span><br>};<br><b>build</b>(website);</div></div>
+            <div class="laptop"><div class="laptop-screen"><div class="screen-sidebar"></div><div class="screen-content"><i></i><i></i><i></i><div></div><div></div></div></div><div class="laptop-base"></div></div>
+            <div class="float-chip chip-design">✦ Design</div><div class="float-chip chip-code">&lt;/&gt; Create</div>
+          </div>
+          <div class="hero-glow"></div>
+        </section>
+
+        <section class="stats-grid" aria-label="Demo overview metrics">
+          <article class="stat-card"><div class="stat-top"><span class="stat-icon purple">▦</span><span class="stat-caption">SAMPLE DATA</span></div><p class="stat-label">Demo website types</p><div class="stat-value">08 <span class="stat-change positive">Ready to preview</span></div><div class="stat-foot"><span class="mini-bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span><span>Across different industries</span></div></article>
+          <article class="stat-card"><div class="stat-top"><span class="stat-icon blue">⌘</span><span class="stat-caption">LOCAL PROJECT</span></div><p class="stat-label">Workspace status</p><div class="stat-value">Active <span class="status-pill"><i></i> Local</span></div><div class="stat-foot"><span class="foot-symbol">↗</span><span>Running as a local demo</span></div></article>
+          <article class="stat-card"><div class="stat-top"><span class="stat-icon orange">✉</span><span class="stat-caption">NOT LIVE</span></div><p class="stat-label">Customer requests</p><div class="stat-value">— <span class="muted-small">Not connected</span></div><div class="stat-foot"><span class="foot-symbol">ⓘ</span><span>No live request database connected</span></div></article>
+          <article class="stat-card"><div class="stat-top"><span class="stat-icon green">✓</span><span class="stat-caption">CHECKLIST</span></div><p class="stat-label">Demo pages</p><div class="stat-value">08/08 <span class="stat-change positive">Listed</span></div><div class="stat-foot"><span class="progress-track"><i></i></span><span>Demo directory overview</span></div></article>
+        </section>
+
+        <section class="panel projects-panel" id="projects">
+          <div class="panel-heading"><div><p class="eyebrow">YOUR SHOWCASE</p><h2>Demo projects <span class="count-badge">8</span></h2><p class="panel-subtitle">Open a demo to preview its current design.</p></div><a class="text-link" href="../#demo">View all on website <span>↗</span></a></div>
+          <div class="project-toolbar"><label class="search-box"><span>⌕</span><input id="projectSearch" type="search" placeholder="Search demo projects..." aria-label="Search demo projects"></label><span class="table-note">8 sample projects</span></div>
+          <div class="project-grid" id="projectGrid">
+            <article class="project-card" data-name="PrimeGlow Salon beauty hair appointment"><div class="project-visual visual-salon"><span class="visual-symbol">✿</span><span class="visual-label">BEAUTY & CARE</span><span class="visual-title">primeglow</span></div><div class="project-info"><div><h3>PrimeGlow Salon</h3><p>Beauty &amp; wellness</p></div><span class="project-status">Ready</span></div><div class="project-bottom"><span>Landing page</span><a href="../demo/primeglow/" target="_blank" rel="noopener">Preview ↗</a></div></article>
+            <article class="project-card" data-name="Restaurant food dining menu"><div class="project-visual visual-food"><span class="visual-symbol">✳</span><span class="visual-label">FRESH · LOCAL · GOOD</span><span class="visual-title">the table.</span></div><div class="project-info"><div><h3>Restaurant</h3><p>Food &amp; hospitality</p></div><span class="project-status">Ready</span></div><div class="project-bottom"><span>Business website</span><a href="../demo/restaurant/" target="_blank" rel="noopener">Preview ↗</a></div></article>
+            <article class="project-card" data-name="Real Estate property homes listings"><div class="project-visual visual-estate"><span class="visual-symbol">⌂</span><span class="visual-label">FIND YOUR PLACE</span><span class="visual-title">Haven Estates</span></div><div class="project-info"><div><h3>Real Estate</h3><p>Property &amp; listings</p></div><span class="project-status">Ready</span></div><div class="project-bottom"><span>Property showcase</span><a href="../demo/real-estate/" target="_blank" rel="noopener">Preview ↗</a></div></article>
+            <article class="project-card" data-name="Hotel Apartment travel accommodation booking"><div class="project-visual visual-hotel"><span class="visual-symbol">✧</span><span class="visual-label">STAY A LITTLE LONGER</span><span class="visual-title">The Haven</span></div><div class="project-info"><div><h3>Hotel / Apartment</h3><p>Travel &amp; accommodation</p></div><span class="project-status">Ready</span></div><div class="project-bottom"><span>Hospitality page</span><a href="../demo/hotel-apartment/" target="_blank" rel="noopener">Preview ↗</a></div></article>
+            <article class="project-card" data-name="Small Shop PupaMart ecommerce products store"><div class="project-visual visual-shop"><span class="visual-symbol">✳</span><span class="visual-label">GOOD THINGS DAILY</span><span class="visual-title">pupamart</span></div><div class="project-info"><div><h3>Small Shop</h3><p>Retail &amp; products</p></div><span class="project-status">Ready</span></div><div class="project-bottom"><span>Shop showcase</span><a href="../demo/small-shop/" target="_blank" rel="noopener">Preview ↗</a></div></article>
+            <article class="project-card" data-name="School Cedarfield Academy education admissions"><div class="project-visual visual-school"><span class="visual-symbol">✦</span><span class="visual-label">LEARN · GROW · LEAD</span><span class="visual-title">Cedarfield</span></div><div class="project-info"><div><h3>School</h3><p>Education &amp; learning</p></div><span class="project-status">Ready</span></div><div class="project-bottom"><span>School website</span><a href="../demo/school/" target="_blank" rel="noopener">Preview ↗</a></div></article>
+            <article class="project-card" data-name="Church Grace Community Church faith community"><div class="project-visual visual-church"><span class="visual-symbol">✝</span><span class="visual-label">FAITH · HOPE · LOVE</span><span class="visual-title">Grace Community</span></div><div class="project-info"><div><h3>Church</h3><p>Community &amp; faith</p></div><span class="project-status">Ready</span></div><div class="project-bottom"><span>Community page</span><a href="../demo/church/" target="_blank" rel="noopener">Preview ↗</a></div></article>
+            <article class="project-card" data-name="Professional Services Apex consultants business"><div class="project-visual visual-pro"><span class="visual-symbol">◇</span><span class="visual-label">CLARITY. STRATEGY. GROWTH.</span><span class="visual-title">APEX</span></div><div class="project-info"><div><h3>Professional Services</h3><p>Consulting &amp; business</p></div><span class="project-status">Ready</span></div><div class="project-bottom"><span>Services website</span><a href="../demo/professional-services/" target="_blank" rel="noopener">Preview ↗</a></div></article>
+          </div>
+          <p class="empty-state" id="emptyState" hidden>No demo projects match your search. Try another term.</p>
+        </section>
+
+        <section class="lower-grid">
+          <article class="panel quick-panel" id="requests"><div class="panel-heading compact"><div><p class="eyebrow">NEXT STEPS</p><h2>Quick actions</h2></div><span class="quick-icon">✦</span></div><a class="action-row" href="../#demo"><span class="action-icon purple">▦</span><span><strong>Browse all demos</strong><small>Explore the 8 sample business websites</small></span><b>→</b></a><a class="action-row" href="../#contact"><span class="action-icon blue">✉</span><span><strong>Open website request form</strong><small>Prepare a request on the public site</small></span><b>→</b></a><a class="action-row" href="../"><span class="action-icon green">↗</span><span><strong>Visit public website</strong><small>See the PupaDigital landing page</small></span><b>→</b></a><div class="notice"><span>ⓘ</span><p><strong>Demo-only dashboard</strong><br>This page does not connect to a live customer database, authentication, or production analytics.</p></div></article>
+          <article class="panel developer-panel" id="activity"><div class="developer-banner"><span class="developer-chip">CREATOR SPACE</span><div class="developer-avatar" aria-hidden="true"><span>PD</span><i>✦</i></div></div><div class="developer-body"><p class="eyebrow">BUILT FOR BUILDERS</p><h2>Keep creating.</h2><p class="developer-copy">A good website makes a business easier to discover, understand, and contact. Use these demo projects to shape your next idea.</p><div class="developer-tags"><span>✦ Design</span><span>&lt;/&gt; Development</span><span>↗ Business</span></div><a class="developer-cta" href="../#contact">Start a website idea <span>→</span></a></div></article>
+        </section>
+        <footer class="page-footer"><span>© <span id="year"></span> PupaDigital · Local demo workspace</span><span><i class="status-dot"></i> No live customer data connected</span></footer>
+      </div>
+    </main>
+  </div>
+  <div class="mobile-scrim" id="mobileScrim"></div>
+  <script src="app.js"></script>
+</body>
+</html>

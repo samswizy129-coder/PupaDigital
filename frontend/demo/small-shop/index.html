@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#174c38">
+  <meta name="description" content="PupaMart Mini Store — a responsive Nigerian retail shop website demonstration.">
+  <title>PupaMart Mini Store | Everyday Essentials</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <div class="demo-banner">
+    DEMO STORE · Sample products and prices · No online payment processing
+  </div>
+
+  <header class="header">
+    <a href="#home" class="brand" aria-label="PupaMart home">
+      <span class="brand-icon">P</span>
+      <span>PupaMart<small>EVERYDAY ESSENTIALS</small></span>
+    </a>
+
+    <nav class="nav" id="mainNav" aria-label="Main navigation">
+      <a href="#products">Shop</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <a class="cart-link" href="#cart" aria-label="View shopping cart">
+      Cart <span id="cartCount">0</span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" type="button"
+      aria-expanded="false" aria-controls="mainNav">Menu</button>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">GOOD FINDS. EVERYDAY VALUE.</p>
+        <h1>Everyday needs.<br><em>Better shopping.</em></h1>
+        <p>
+          Discover useful everyday essentials in one convenient place.
+          Browse our sample collection and send your order enquiry directly.
+        </p>
+        <a class="button button-light" href="#products">Explore the Store ↗</a>
+        <div class="hero-points">
+          <span>✓ Easy browsing</span>
+          <span>✓ Simple ordering</span>
+          <span>✓ Direct enquiries</span>
+        </div>
+      </div>
+      <div class="hero-visual" role="img"
+        aria-label="Illustrative arrangement of shopping and lifestyle products"></div>
+    </section>
+
+    <section class="benefits" aria-label="Shopping features">
+      <div><span>01</span><strong>Everyday essentials</strong><small>Useful products in one place</small></div>
+      <div><span>02</span><strong>Simple shopping</strong><small>Search and filter the catalogue</small></div>
+      <div><span>03</span><strong>Direct enquiries</strong><small>Prepare orders through WhatsApp</small></div>
+    </section>
+
+    <section class="shop section-wrap" id="products">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">THE SAMPLE COLLECTION</p>
+          <h2>Find your <em>favourites.</em></h2>
+        </div>
+        <p>Explore the catalogue, select quantities and build your shopping cart.</p>
+      </div>
+
+      <div class="shop-tools">
+        <label class="search-box">
+          <span class="visually-hidden">Search products</span>
+          <span aria-hidden="true">⌕</span>
+          <input id="searchInput" type="search" maxlength="100"
+            placeholder="Search products…">
+        </label>
+
+        <label class="category-select">
+          <span class="visually-hidden">Filter by category</span>
+          <select id="categoryFilter">
+            <option value="all">All categories</option>
+            <option value="home">Home & Living</option>
+            <option value="fashion">Fashion</option>
+            <option value="electronics">Electronics</option>
+            <option value="beauty">Beauty & Care</option>
+            <option value="food">Food & Drinks</option>
+          </select>
+        </label>
+      </div>
+
+      <p class="product-count" id="productCount" aria-live="polite"></p>
+      <div class="product-grid" id="productGrid">
+        <p>Loading sample products…</p>
+      </div>
+      <p class="demo-note">
+        Products, images, prices and stock status are illustrative.
+        Confirm actual price and availability before paying.
+      </p>
+    </section>
+
+    <section class="cart-section" id="cart">
+      <div class="section-wrap">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">YOUR SELECTION</p>
+            <h2>Shopping <em>cart.</em></h2>
+          </div>
+          <p>Review your selected items before preparing a WhatsApp order enquiry.</p>
+        </div>
+
+        <div class="cart-layout">
+          <div class="cart-items" id="cartItems" aria-live="polite">
+            <p class="empty-cart">Your cart is empty. Explore the products above to get started.</p>
+          </div>
+
+          <aside class="cart-summary">
+            <h3>Order summary</h3>
+            <div class="summary-line"><span>Items</span><strong id="summaryItems">0</strong></div>
+            <div class="summary-line"><span>Subtotal</span><strong id="cartSubtotal">₦0</strong></div>
+            <p class="summary-note">
+              Delivery fees, final prices and availability must be confirmed by the shop.
+            </p>
+            <button class="button button-primary full-width" id="checkoutButton" type="button">
+              Prepare WhatsApp Order ↗
+            </button>
+            <button class="clear-cart" id="clearCartButton" type="button">Clear cart</button>
+            <p id="cartStatus" class="status" role="status" aria-live="polite"></p>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="about section-wrap" id="about">
+      <div class="about-image" role="img"
+        aria-label="Illustrative retail shopping scene"></div>
+      <div>
+        <p class="eyebrow">A SHOPPING EXPERIENCE CONCEPT</p>
+        <h2>Simple, useful<br><em>and convenient.</em></h2>
+        <p>
+          PupaDigital creates practical websites that help small businesses
+          present their products, attract customers and receive enquiries.
+          This demo can be customised for a real shop's brand and catalogue.
+        </p>
+        <a class="text-link" href="#products">Browse sample products ↗</a>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div class="section-wrap contact-layout">
+        <div>
+          <p class="eyebrow">HAVE A QUESTION?</p>
+          <h2>Let's talk <em>shopping.</em></h2>
+          <p>Use the order button to prepare a message, then review and send it yourself.</p>
+        </div>
+        <a class="button button-light" href="#cart">Review Your Cart ↗</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a href="#home" class="brand footer-brand">
+      <span class="brand-icon">P</span>
+      <span>PupaMart<small>EVERYDAY ESSENTIALS</small></span>
+    </a>
+    <p>A small-business shop website concept by PupaDigital.</p>
+    <p class="footer-disclaimer">DEMO ONLY · No real inventory, payment gateway or confirmed orders.</p>
+    <p class="copyright">© <span id="currentYear"></span> PupaMart Mini Store</p>
+  </footer>
+</body>
+</html>

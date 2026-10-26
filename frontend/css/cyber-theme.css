@@ -1,0 +1,488 @@
+/* PUPADIGITAL STEP 10B — ADDITIVE DARK CYBER THEME */
+
+:root {
+    color-scheme: dark;
+    --pd-bg: #050b19;
+    --pd-panel: #0a1730;
+    --pd-panel-light: #0d2040;
+    --pd-cyan: #19c8ff;
+    --pd-violet: #8b6cff;
+    --pd-text: #eef5ff;
+    --pd-muted: #a8bad5;
+    --pd-border: rgba(85, 176, 255, 0.24);
+}
+
+html {
+    scroll-behavior: smooth;
+    background: var(--pd-bg);
+}
+
+body {
+    background:
+        radial-gradient(ellipse at 75% 0%, rgba(36, 92, 170, 0.18), transparent 38%),
+        var(--pd-bg) !important;
+    color: var(--pd-text) !important;
+}
+
+body p,
+body li,
+body small {
+    color: var(--pd-muted);
+}
+
+h1, h2, h3, h4, strong, b {
+    color: var(--pd-text);
+}
+
+a {
+    transition: color .18s ease, border-color .18s ease,
+                background .18s ease, transform .18s ease;
+}
+
+a:hover {
+    color: var(--pd-cyan);
+}
+
+.navbar {
+    background: rgba(5, 11, 25, .96) !important;
+    border-bottom: 1px solid var(--pd-border) !important;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, .2);
+    backdrop-filter: blur(16px);
+}
+
+.logo span {
+    color: var(--pd-cyan) !important;
+}
+
+.navbar nav a {
+    color: #d6e5fb !important;
+}
+
+.navbar nav a:hover {
+    color: var(--pd-cyan) !important;
+}
+
+.nav-button,
+.btn,
+.button,
+button[type="submit"],
+input[type="submit"] {
+    background: linear-gradient(115deg, #087fba, #5c4cce) !important;
+    color: #fff !important;
+    border: 1px solid rgba(25, 200, 255, .55) !important;
+    box-shadow: 0 8px 24px rgba(25, 140, 230, .17);
+}
+
+.nav-button:hover,
+.btn:hover,
+.button:hover,
+button[type="submit"]:hover,
+input[type="submit"]:hover {
+    transform: translateY(-2px);
+    filter: brightness(1.12);
+}
+
+section,
+.section,
+.demo-section,
+.contact {
+    background-color: transparent;
+    color: var(--pd-text);
+}
+
+.section-heading p,
+.hero p,
+.pd-creator-card p {
+    color: var(--pd-muted) !important;
+}
+
+.service-card,
+.demo-card,
+.website-type-card,
+.pd-creator-card,
+.contact-card,
+.form-card,
+.request-card,
+.feature-card {
+    background: linear-gradient(145deg, rgba(13, 32, 64, .96), rgba(7, 18, 38, .98)) !important;
+    color: var(--pd-text) !important;
+    border: 1px solid var(--pd-border) !important;
+    box-shadow: 0 16px 42px rgba(0, 0, 0, .2);
+}
+
+.service-card p,
+.demo-card p,
+.website-type-card p,
+.pd-creator-card p,
+.contact p {
+    color: var(--pd-muted) !important;
+}
+
+input,
+textarea,
+select {
+    background: #07142b !important;
+    color: var(--pd-text) !important;
+    border: 1px solid rgba(105, 166, 230, .38) !important;
+    border-radius: 10px;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #8298b8 !important;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    outline: 2px solid rgba(25, 200, 255, .32);
+    border-color: var(--pd-cyan) !important;
+}
+
+label {
+    color: #dce9fb !important;
+}
+
+footer {
+    border-top: 1px solid var(--pd-border);
+    color: var(--pd-muted);
+}
+
+.pd-creator-photo-wrap {
+    background: radial-gradient(circle at 50% 35%, rgba(25, 200, 255, .2), transparent 55%), #07142b !important;
+    border: 1px solid var(--pd-border);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.pd-creator-photo-badge {
+    background: #07142b !important;
+    color: var(--pd-cyan) !important;
+    border: 1px solid var(--pd-border);
+}
+
+/* Keep the existing three-dot sidebar button visible. */
+.sidebar-toggle {
+    display: inline-flex !important;
+    position: relative !important;
+    z-index: 1201 !important;
+    flex: 0 0 44px !important;
+    width: 44px !important;
+    height: 44px !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 0 !important;
+    margin: 0 8px !important;
+    border: 1px solid var(--pd-cyan) !important;
+    border-radius: 12px !important;
+    background: linear-gradient(145deg, #10284b, #0a1730) !important;
+    color: #fff !important;
+    font-size: 29px !important;
+    font-weight: 800 !important;
+    line-height: 1 !important;
+    cursor: pointer !important;
+    box-shadow: 0 0 18px rgba(25, 200, 255, .14) !important;
+}
+
+.sidebar-toggle::before,
+.sidebar-toggle::after {
+    content: none !important;
+    display: none !important;
+}
+
+.sidebar-toggle:hover,
+.sidebar-toggle:focus-visible {
+    background: #12345b !important;
+    outline: 2px solid rgba(25, 200, 255, .4);
+}
+
+.pupa-sidebar {
+    background: linear-gradient(160deg, #0a1932, #050b19) !important;
+    border-right: 1px solid var(--pd-border) !important;
+    color: var(--pd-text) !important;
+}
+
+.pupa-sidebar a {
+    color: #dce9fb !important;
+}
+
+.pupa-sidebar a:hover {
+    background: rgba(25, 200, 255, .1) !important;
+    color: var(--pd-cyan) !important;
+}
+
+.sidebar-backdrop {
+    background: rgba(1, 5, 14, .72) !important;
+    backdrop-filter: blur(4px);
+}
+
+.hero-art,
+.code-card,
+.laptop,
+.float-chip {
+    filter: saturate(1.1);
+}
+
+@media (max-width: 760px) {
+    .navbar {
+        gap: 8px;
+    }
+
+    .navbar nav {
+        gap: 10px;
+    }
+
+    .sidebar-toggle {
+        order: 3;
+        margin-left: auto !important;
+    }
+
+    .navbar > .nav-button {
+        order: 4;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        transition-duration: .01ms !important;
+        animation-duration: .01ms !important;
+    }
+}
+
+/* END PUPADIGITAL STEP 10B */
+
+/* PUPADIGITAL STEP 10B.4F — DEVELOPER ILLUSTRATION */
+.pd-creator-visual-wrap {
+  display:grid; place-items:center; min-width:0; overflow:hidden;
+  background:radial-gradient(ellipse at 50% 45%,#19c8ff25,transparent 60%),
+    linear-gradient(145deg,#08152b,#0b1024 70%,#151032);
+}
+.pd-dev-visual {
+  position:relative; width:100%; min-height:340px; aspect-ratio:1/1;
+  overflow:hidden; color:#e9f7ff;
+  background:linear-gradient(#19c8ff09 1px,transparent 1px),
+    linear-gradient(90deg,#19c8ff09 1px,transparent 1px);
+  background-size:25px 25px;
+}
+.pd-dev-code-window {
+  position:absolute; z-index:2; top:10%; left:5%; width:68%;
+  padding-bottom:12px; border:1px solid #5bc7ff55; border-radius:12px;
+  background:#050d1df5; box-shadow:0 18px 40px #0008;
+  transform:rotate(-4deg);
+}
+.pd-dev-code-top {
+  display:flex; align-items:center; gap:5px; min-height:32px;
+  padding:0 9px; border-bottom:1px solid #91aed726;
+}
+.pd-dev-code-top i,.pd-dev-screen-bar i {
+  display:block; width:7px; height:7px; flex:0 0 auto;
+  border-radius:50%; background:#ff6b83;
+}
+.pd-dev-code-top i:nth-child(2),.pd-dev-screen-bar i:nth-child(2) {background:#ffc45c}
+.pd-dev-code-top i:nth-child(3),.pd-dev-screen-bar i:nth-child(3) {background:#48e0ae}
+.pd-dev-code-top span {margin-left:auto;color:#8fa8c8;font:10px monospace}
+.pd-dev-code-lines {
+  padding:12px 9px 0; color:#dbe8ff;
+  font:clamp(9px,2.4vw,12px)/1.9 ui-monospace,monospace;
+  white-space:nowrap;
+}
+.pd-dev-code-lines b {color:#c59bff}
+.pd-dev-code-lines em {color:#71e5bf;font-style:normal}
+.pd-dev-code-lines strong {color:#58d8ff}
+.pd-dev-laptop {
+  position:absolute;z-index:3;left:10%;bottom:18%;width:80%;
+  filter:drop-shadow(0 20px 20px #0007);
+}
+.pd-dev-screen {
+  width:83%;margin:auto;padding:7px;border:2px solid #536a8e;
+  border-radius:10px 10px 4px 4px;background:#101d34;
+}
+.pd-dev-screen-bar {display:flex;gap:4px;padding:3px 2px 7px}
+.pd-dev-screen-bar i {width:5px;height:5px}
+.pd-dev-screen-layout {
+  display:flex;min-height:90px;overflow:hidden;border-radius:4px;
+  background:#f0f5ff;
+}
+.pd-dev-screen-side {width:20%;background:linear-gradient(#142b4b,#26395e)}
+.pd-dev-screen-main {flex:1;padding:11px 8px}
+.pd-dev-screen-title {
+  width:66%;height:8px;margin-bottom:8px;border-radius:4px;
+  background:linear-gradient(90deg,#19c8ff,#8b6cff);
+}
+.pd-dev-screen-line {
+  width:90%;height:4px;margin-bottom:5px;border-radius:4px;background:#c6d4e9;
+}
+.pd-dev-screen-line.short {width:57%}
+.pd-dev-screen-panels {display:flex;gap:5px;margin-top:10px}
+.pd-dev-screen-panels i {
+  height:23px;flex:1;border:1px solid #d7e1f2;border-radius:4px;
+  background:linear-gradient(145deg,#fff,#dcecff);
+}
+.pd-dev-laptop-base {
+  height:10px;border-radius:2px 2px 12px 12px;
+  background:linear-gradient(#b9c9df,#596d8c 60%,#2a3954);
+}
+.pd-dev-laptop-base:after {
+  content:"";display:block;width:22%;height:3px;margin:auto;
+  border-radius:0 0 5px 5px;background:#263651;
+}
+.pd-dev-chip {
+  position:absolute;z-index:4;display:inline-flex;align-items:center;
+  padding:8px;border:1px solid #53d0ff55;border-radius:9px;
+  background:#071226f5;color:#e8f8ff;box-shadow:0 10px 25px #0005;
+  font-size:10px;font-weight:700;white-space:nowrap;
+}
+.pd-dev-chip-design {top:15%;right:3%;color:#8feaff}
+.pd-dev-chip-build {right:3%;bottom:13%;color:#c6b6ff}
+.pd-creator-visual-wrap .pd-creator-photo-badge {
+  z-index:5;bottom:3%;left:50%;transform:translateX(-50%);
+  border:1px solid #19c8ff55;background:#050d1df5;color:#9deaff;
+  white-space:nowrap;
+}
+@media(max-width:480px) {
+  .pd-dev-visual {min-height:290px}
+  .pd-dev-code-window {left:3%;width:70%}
+  .pd-dev-laptop {left:7%;width:86%}
+  .pd-dev-screen-layout {min-height:78px}
+  .pd-dev-chip {padding:6px;font-size:9px}
+}
+/* END PUPADIGITAL STEP 10B.4F */
+
+/* PUPADIGITAL STEP 10C SIDEBAR POSITION FIX
+   Additive overrides: preserve existing theme and sidebar functionality. */
+
+/* Put the existing three-dot button at the far left of the navbar. */
+.navbar > #sidebarToggle {
+    order: -1 !important;
+    flex: 0 0 44px !important;
+    margin: 0 14px 0 0 !important;
+    position: relative !important;
+    z-index: 1201 !important;
+}
+
+/* Keep the brand visible beside the menu button. */
+.navbar > .logo {
+    order: 0 !important;
+    flex-shrink: 0;
+}
+
+/* Preserve desktop navigation after the left-side menu and logo. */
+.navbar > nav {
+    order: 1;
+}
+
+/* Keep the existing call-to-action at the end of the navbar. */
+.navbar > .nav-button {
+    order: 2;
+}
+
+/* Keep the sidebar above the backdrop and the toggle accessible. */
+#pupaSidebar {
+    z-index: 1202;
+}
+
+#sidebarBackdrop {
+    z-index: 1200;
+}
+
+#sidebarToggle {
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+}
+
+/* Mobile: retain the left-side three-dot button and hide desktop links. */
+@media (max-width: 760px) {
+    .navbar > #sidebarToggle {
+        order: -1 !important;
+        margin: 0 10px 0 0 !important;
+    }
+
+    .navbar > .logo {
+        order: 0 !important;
+        margin-right: auto;
+    }
+
+    .navbar > nav,
+    .navbar > .nav-button {
+        display: none !important;
+    }
+}
+
+/* END PUPADIGITAL STEP 10C SIDEBAR POSITION FIX */
+
+/* PUPADIGITAL QUICK REPAIR — 2026-10-26 */
+.navbar {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.navbar > #sidebarToggle {
+    order: 0 !important;
+    flex: 0 0 44px !important;
+    margin: 0 10px 0 0 !important;
+    position: relative !important;
+    z-index: 1203 !important;
+    pointer-events: auto !important;
+}
+
+.navbar > .logo {
+    order: 1 !important;
+    flex-shrink: 0;
+}
+
+.navbar > nav {
+    order: 2 !important;
+}
+
+.navbar > .nav-button {
+    order: 3 !important;
+}
+
+#sidebarBackdrop {
+    position: fixed;
+    inset: 0;
+    z-index: 1200 !important;
+}
+
+#pupaSidebar {
+    position: fixed;
+    inset: 0 auto 0 0;
+    z-index: 1202 !important;
+    max-width: 86vw;
+    overflow-y: auto;
+}
+
+#pupaSidebar.is-open {
+    transform: translateX(0) !important;
+    visibility: visible !important;
+}
+
+@media (max-width: 760px) {
+    .navbar {
+        justify-content: flex-start !important;
+        gap: 8px !important;
+    }
+
+    .navbar > #sidebarToggle {
+        order: 0 !important;
+        margin-right: 4px !important;
+    }
+
+    .navbar > .logo {
+        order: 1 !important;
+        margin-right: auto !important;
+    }
+
+    .navbar > nav,
+    .navbar > .nav-button {
+        display: none !important;
+    }
+}
+/* END PUPADIGITAL QUICK REPAIR */

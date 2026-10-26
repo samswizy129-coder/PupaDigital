@@ -1,0 +1,17 @@
+
+# Local runtime and deployment data
+backups/
+logs/
+*.log
+*.pid
+__pycache__/
+*.py[cod]
+.env
+.env.*
+!.env.example
+
+# Customer enquiries and local application data
+backend/data/
+
+# Local frontend backups
+frontend/index.html.backup-v3

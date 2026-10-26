@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap');
+
+:root {
+  --green: #163b32;
+  --green-light: #315b4d;
+  --cream: #f7f5ef;
+  --paper: #fffefa;
+  --gold: #d7ae69;
+  --ink: #202c26;
+  --muted: #68736c;
+  --line: #e2e5dc;
+  --serif: "Playfair Display", Georgia, serif;
+  --sans: "DM Sans", Arial, sans-serif;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 90px; }
+body { margin: 0; color: var(--ink); background: var(--paper); font-family: var(--sans); line-height: 1.65; }
+a { color: inherit; }
+button, input, select, textarea { font: inherit; }
+button, a { -webkit-tap-highlight-color: transparent; }
+img { display: block; max-width: 100%; }
+.demo-notice { padding: 8px 14px; text-align: center; background: #e8e2d3; color: #514a3d; font-size: 10px; font-weight: 700; letter-spacing: 1.2px; }
+
+.site-header { min-height: 88px; padding: 16px 6.5%; display: flex; justify-content: space-between; align-items: center; gap: 25px; background: var(--paper); }
+.brand { display: flex; gap: 12px; align-items: center; text-decoration: none; color: var(--green); }
+.brand-mark { display: grid; place-items: center; width: 43px; height: 43px; background: var(--green); color: white; font-family: var(--serif); font-size: 27px; border-radius: 50% 50% 4px 50%; }
+.brand-name { font-weight: 700; letter-spacing: 1.5px; font-size: 13px; line-height: 1.4; }
+.brand-name small { display: block; font-size: 10px; letter-spacing: 4px; font-weight: 500; }
+.main-nav { display: flex; align-items: center; gap: clamp(14px, 2.4vw, 34px); }
+.main-nav a, .site-footer a { text-decoration: none; font-size: 12px; font-weight: 600; }
+.main-nav a:hover, .site-footer a:hover { color: #b17f39; }
+.main-nav .nav-cta { background: var(--green); color: white; padding: 13px 18px; }
+.menu-toggle { display: none; background: transparent; border: 1px solid var(--line); padding: 8px 12px; color: var(--green); cursor: pointer; }
+
+.hero { position: relative; min-height: 610px; display: flex; align-items: center; overflow: hidden; color: white; background: #344b3e url("https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=2000&q=90") center 44%/cover no-repeat; }
+.hero-overlay { position: absolute; inset: 0; background: linear-gradient(90deg, rgba(14,39,31,.94) 0%, rgba(19,48,38,.78) 48%, rgba(19,48,38,.16) 100%); }
+.hero-content { position: relative; z-index: 1; width: min(700px, 90%); margin-left: 9%; padding: 85px 0; }
+.eyebrow { color: #8b9b87; font-size: 10px; letter-spacing: 2.1px; font-weight: 700; margin: 0 0 17px; }
+.hero .eyebrow { color: #e2c58e; }
+.hero .eyebrow span { display: inline-block; width: 22px; height: 1px; vertical-align: middle; margin-right: 8px; background: var(--gold); }
+h1, h2, h3, p { margin-top: 0; }
+.hero h1 { font-family: var(--serif); font-weight: 500; font-size: clamp(44px, 6.1vw, 78px); line-height: 1.08; letter-spacing: -1.5px; margin: 0 0 22px; }
+.hero h1 em, h2 em { font-weight: 500; color: var(--gold); }
+.hero-copy { max-width: 460px; color: #e1e6df; font-size: 14px; }
+.hero-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 24px; margin-top: 30px; }
+.button { display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: 13px 20px; border: 0; text-decoration: none; cursor: pointer; font-size: 12px; font-weight: 700; transition: transform .2s, background .2s; }
+.button:hover { transform: translateY(-2px); }
+.button-light { background: #f4ead5; color: var(--green); }
+.button-dark { background: var(--green); color: white; }
+.button-dark:hover { background: var(--green-light); }
+.text-link { color: white; font-size: 12px; text-decoration: none; border-bottom: 1px solid #a8b4a9; padding-bottom: 5px; }
+.hero-note { font-size: 10px; color: #d4ddd3; margin: 35px 0 0; }
+.hero-side-note { position: absolute; right: 3%; bottom: 38px; writing-mode: vertical-rl; font-size: 9px; letter-spacing: 3px; color: #e9e4d6; }
+
+.section-wrap { width: min(1160px, 87%); margin-inline: auto; }
+.intro { padding-top: 105px; padding-bottom: 110px; display: grid; grid-template-columns: .55fr 1.35fr .8fr; align-items: start; gap: 35px; }
+.intro-label { padding-top: 8px; }
+.section-number { color: #8c9489; font-size: 9px; letter-spacing: 1.7px; font-weight: 700; }
+.small-line { display: block; height: 1px; width: 48px; background: var(--gold); margin-top: 17px; }
+.intro h2, .section-heading h2, .learning-copy h2, .admissions-copy h2, .contact-section h2 { font-family: var(--serif); font-size: clamp(32px, 4vw, 49px); font-weight: 500; line-height: 1.2; letter-spacing: -.8px; margin-bottom: 22px; }
+.intro h2 em, .section-heading h2 em, .learning-copy h2 em, .contact-section h2 em { color: var(--green-light); }
+.intro-copy { max-width: 520px; color: var(--muted); font-size: 13px; }
+.underlined-link { display: inline-block; margin-top: 8px; padding-bottom: 5px; text-decoration: none; border-bottom: 1px solid var(--gold); font-size: 11px; font-weight: 700; }
+.intro-card { padding: 26px; background: var(--cream); margin-top: 40px; }
+.quote-mark { color: #b48c4f; font: 60px/1 var(--serif); height: 48px; }
+.intro-card p { font: italic 19px/1.5 var(--serif); color: var(--green); }
+.intro-card span { color: #7a8279; font-size: 8px; letter-spacing: 1.5px; }
+
+.programmes-section { padding: 95px 0 100px; background: var(--cream); }
+.section-heading { display: flex; justify-content: space-between; align-items: end; gap: 40px; margin-bottom: 42px; }
+.section-heading h2 { margin-bottom: 0; }
+.section-description { max-width: 360px; color: var(--muted); font-size: 12px; margin-bottom: 5px; }
+.programme-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+.programme-card { background: var(--paper); min-width: 0; }
+.programme-art { min-height: 165px; display: flex; align-items: center; justify-content: space-between; padding: 25px; }
+.programme-art > span { align-self: flex-start; font-size: 10px; letter-spacing: 2px; }
+.programme-art b { font: 68px/1 var(--serif); }
+.early-art { background: #d9e2d4; color: #355847; }
+.primary-art { background: #eadbc3; color: #7e613d; }
+.secondary-art { background: #d4dcd9; color: #34554c; }
+.programme-content { padding: 25px 23px 29px; }
+.card-kicker { color: #8a927f; font-size: 9px; letter-spacing: 1.6px; font-weight: 700; margin-bottom: 9px; }
+.programme-content h3 { color: var(--green); font: 25px/1.25 var(--serif); margin-bottom: 11px; }
+.programme-content > p:not(.card-kicker) { color: var(--muted); font-size: 12px; min-height: 60px; }
+.card-link { display: inline-block; text-decoration: none; font-size: 10px; font-weight: 700; border-bottom: 1px solid var(--gold); padding-bottom: 5px; }
+.card-link:hover { color: #966d34; }
+.demo-caption { margin: 22px 0 0; color: #777f75; font-size: 10px; }
+
+.learning-section { padding-top: 110px; padding-bottom: 115px; display: grid; grid-template-columns: 1fr .9fr; align-items: center; gap: 9%; }
+.learning-visual { position: relative; }
+.learning-visual img { width: 100%; height: 490px; object-fit: cover; background: var(--cream); }
+.visual-caption { display: flex; justify-content: space-between; gap: 15px; padding-top: 12px; color: #777f75; font-size: 8px; letter-spacing: 1.1px; }
+.learning-copy h2 { margin-bottom: 18px; }
+.learning-copy > p:not(.eyebrow) { color: var(--muted); font-size: 12px; }
+.learning-points { margin: 25px 0; }
+.learning-points > div { display: flex; gap: 17px; padding: 14px 0; border-bottom: 1px solid var(--line); }
+.learning-points > div > span { font-size: 10px; color: #b18c54; padding-top: 2px; }
+.learning-points p { margin: 0; }
+.learning-points strong, .learning-points small { display: block; }
+.learning-points strong { color: var(--green); font-size: 12px; }
+.learning-points small { color: var(--muted); font-size: 10px; margin-top: 4px; }
+
+.admissions-section { padding: 95px 0; background: #e9ede4; }
+.admissions-wrap { width: min(1100px, 87%); margin: auto; display: grid; grid-template-columns: .9fr 1fr; gap: 10%; align-items: start; }
+.admissions-copy { padding-top: 25px; }
+.admissions-copy h2 { color: var(--green); font-size: clamp(37px, 4.5vw, 55px); }
+.admissions-copy h2 em { color: #a67f45; }
+.admissions-copy > p:not(.eyebrow) { color: #66736a; font-size: 13px; max-width: 420px; }
+.admissions-note { display: flex; gap: 14px; margin-top: 32px; align-items: start; }
+.admissions-note > span { color: #a67f45; font-size: 23px; }
+.admissions-note p { margin: 0; }
+.admissions-note strong, .admissions-note small { display: block; }
+.admissions-note strong { font-size: 12px; color: var(--green); }
+.admissions-note small { font-size: 11px; color: var(--muted); margin-top: 4px; }
+.admissions-form { background: var(--paper); padding: clamp(23px, 4vw, 42px); box-shadow: 0 12px 40px #1a33250b; }
+.form-heading { display: flex; justify-content: space-between; padding-bottom: 18px; margin-bottom: 22px; border-bottom: 1px solid var(--line); color: #7c887d; font-size: 9px; letter-spacing: 1.5px; font-weight: 700; }
+.admissions-form label { display: block; margin: 17px 0 7px; color: var(--green); font-size: 11px; font-weight: 700; }
+.admissions-form label span { color: var(--muted); font-weight: 400; }
+.admissions-form input, .admissions-form select, .admissions-form textarea { width: 100%; min-height: 45px; padding: 12px; border: 1px solid #dfe4da; border-radius: 0; background: #fff; color: var(--ink); font-size: 12px; }
+.admissions-form textarea { resize: vertical; }
+.admissions-form input:focus, .admissions-form select:focus, .admissions-form textarea:focus { outline: 2px solid #91aa96; outline-offset: 1px; }
+.submit-button { width: 100%; margin-top: 21px; }
+.form-status { font-size: 11px; color: var(--green); margin: 12px 0 0; overflow-wrap: anywhere; }
+.privacy-note { margin: 12px 0 0; font-size: 9px; color: #7d857b; }
+
+.contact-section { padding-top: 95px; padding-bottom: 95px; display: grid; grid-template-columns: 1fr .8fr; gap: 12%; }
+.contact-section h2 { margin-bottom: 0; }
+.contact-details > p { color: var(--muted); font-size: 12px; }
+.contact-link { display: block; width: fit-content; max-width: 100%; margin: 14px 0; text-decoration: none; color: var(--green); font-size: 12px; font-weight: 700; border-bottom: 1px solid var(--gold); padding-bottom: 5px; overflow-wrap: anywhere; }
+.contact-demo-note { margin-top: 25px; font-size: 10px !important; }
+
+.site-footer { background: var(--green); color: #e9eee7; text-align: center; padding: 38px 20px 24px; }
+.footer-brand { text-decoration: none; font-weight: 700; letter-spacing: 2px; font-size: 13px; }
+.footer-brand span { display: block; font-weight: 400; font-size: 10px; letter-spacing: 4px; }
+.site-footer > p { color: #bac8bb; font-size: 10px; margin: 12px 0 18px; }
+.site-footer > div { display: flex; justify-content: center; gap: 25px; flex-wrap: wrap; }
+.site-footer a { color: #e9eee7; }
+.site-footer .footer-legal { border-top: 1px solid #ffffff25; max-width: 600px; margin: 25px auto 0; padding-top: 18px; font-size: 9px; }
+
+@media (min-width: 1400px) {
+  .hero { min-height: 680px; }
+}
+@media (max-width: 900px) {
+  .site-header { padding-inline: 5%; }
+  .main-nav { gap: 14px; }
+  .main-nav a { font-size: 10px; }
+  .intro { grid-template-columns: .4fr 1.3fr .8fr; gap: 22px; }
+  .intro-card { padding: 20px; }
+  .learning-section { gap: 5%; }
+  .learning-visual img { height: 430px; }
+}
+@media (max-width: 700px) {
+  html { scroll-padding-top: 75px; }
+  .site-header { min-height: 72px; flex-wrap: wrap; position: relative; }
+  .brand-mark { width: 38px; height: 38px; }
+  .menu-toggle { display: block; }
+  .main-nav { display: none; width: 100%; flex-direction: column; align-items: stretch; gap: 0; padding: 4px 0 12px; }
+  .main-nav.open { display: flex; }
+  .main-nav a { padding: 12px 8px; font-size: 12px; }
+  .main-nav .nav-cta { text-align: center; margin-top: 5px; }
+  .hero { min-height: 570px; background-position: 59% center; }
+  .hero-overlay { background: linear-gradient(90deg, rgba(14,39,31,.92), rgba(19,48,38,.55)); }
+  .hero-content { margin-left: 7%; padding: 72px 0; }
+  .hero h1 { font-size: clamp(43px, 11vw, 65px); }
+  .hero-side-note { display: none; }
+  .intro { padding-top: 70px; padding-bottom: 75px; grid-template-columns: 1fr; gap: 18px; }
+  .intro-label { display: flex; align-items: center; gap: 16px; }
+  .small-line { margin: 0; }
+  .intro-card { margin-top: 5px; }
+  .programmes-section { padding: 70px 0; }
+  .section-heading { display: block; }
+  .section-description { margin-top: 20px; }
+  .programme-grid { grid-template-columns: 1fr; gap: 18px; }
+  .programme-art { min-height: 135px; }
+  .programme-content > p:not(.card-kicker) { min-height: 0; }
+  .learning-section { padding-top: 70px; padding-bottom: 75px; grid-template-columns: 1fr; gap: 35px; }
+  .learning-visual img { height: min(90vw, 420px); }
+  .admissions-section { padding: 70px 0; }
+  .admissions-wrap { grid-template-columns: 1fr; gap: 30px; }
+  .admissions-copy { padding-top: 0; }
+  .contact-section { padding-top: 70px; padding-bottom: 70px; grid-template-columns: 1fr; gap: 28px; }
+}
+@media (max-width: 360px) {
+  .demo-notice { font-size: 8px; letter-spacing: .6px; }
+  .site-header { padding-inline: 4%; }
+  .brand-name { font-size: 11px; }
+  .brand-name small { font-size: 8px; letter-spacing: 3px; }
+  .hero h1 { font-size: 40px; }
+  .hero-actions { align-items: flex-start; flex-direction: column; gap: 17px; }
+  .section-wrap, .admissions-wrap { width: 90%; }
+  .admissions-form { padding: 20px 15px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { transition-duration: .01ms !important; animation-duration: .01ms !important; }
+}
+
+/* ADDITIVE SCHOOL LIFE GALLERY — existing styles preserved */
+.school-life-gallery {
+  padding: 100px 0 105px;
+  background: #f3f3eb;
+}
+
+.school-gallery-wrap {
+  width: min(1120px, 87%);
+  margin: 0 auto;
+}
+
+.school-gallery-heading {
+  display: grid;
+  grid-template-columns: 1.1fr .7fr;
+  gap: 8%;
+  align-items: end;
+  margin-bottom: 38px;
+}
+
+.school-gallery-heading h2 {
+  margin-bottom: 0;
+  color: var(--green);
+  font-size: clamp(35px, 4.4vw, 55px);
+}
+
+.school-gallery-heading h2 em {
+  color: #a67f45;
+}
+
+.school-gallery-heading > p {
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.9;
+  margin-bottom: 5px;
+}
+
+.school-photo-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.school-photo-card {
+  min-width: 0;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 8px 28px #1a33250b;
+}
+
+.school-photo-card img {
+  display: block;
+  width: 100%;
+  height: 225px;
+  object-fit: cover;
+  background: #e4e8df;
+  transition: transform .35s ease;
+}
+
+.school-photo-card:hover img {
+  transform: scale(1.035);
+}
+
+.school-photo-feature {
+  grid-column: span 2;
+}
+
+.school-photo-feature img {
+  height: 285px;
+}
+
+.school-photo-caption {
+  display: flex;
+  align-items: flex-start;
+  gap: 13px;
+  padding: 18px 17px 20px;
+}
+
+.school-photo-caption > span {
+  color: #a67f45;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding-top: 3px;
+}
+
+.school-photo-caption h3 {
+  color: var(--green);
+  font-family: var(--serif);
+  font-size: 19px;
+  font-weight: 400;
+  margin: 0 0 6px;
+}
+
+.school-photo-caption p {
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.7;
+  margin: 0;
+}
+
+.school-gallery-note {
+  color: #737e72;
+  font-size: 10px;
+  line-height: 1.8;
+  margin: 25px 0 0;
+}
+
+@media (max-width: 900px) {
+  .school-photo-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .school-photo-card img {
+    height: 230px;
+  }
+
+  .school-photo-feature img {
+    height: 270px;
+  }
+}
+
+@media (max-width: 700px) {
+  .school-life-gallery {
+    padding: 70px 0 75px;
+  }
+
+  .school-gallery-heading {
+    grid-template-columns: 1fr;
+    gap: 15px;
+    margin-bottom: 27px;
+  }
+
+  .school-photo-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .school-photo-feature {
+    grid-column: auto;
+  }
+
+  .school-photo-card img,
+  .school-photo-feature img {
+    height: min(66vw, 330px);
+  }
+
+  .school-photo-caption {
+    padding: 16px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .school-photo-card img {
+    transition: none;
+  }
+}
+/* END ADDITIVE SCHOOL LIFE GALLERY */
